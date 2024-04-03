@@ -1,0 +1,19 @@
+base_url = "https://thewinterdev.fr"
+# title = ""
+# description = ""
+compile_sass = false
+build_search_index = true
+default_language = "en"
+generate_feed = true
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+[markdown]
+render_emoji = true
+external_links_target_blank = true
+smart_punctuation = true
+highlight_code = true
+highlight_theme = "nord"
+
+[extra]

@@ -1,0 +1,69 @@
+@import 'fonts/fonts.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *:before, *:after { @apply box-border }
+
+/* --- Markdown styling --- */
+
+/* Format headers */
+h1 { @apply text-2xl md:text-4xl }
+h2 { @apply text-xl md:text-3xl }
+h3 { @apply text-base md:text-2xl }
+h4 { @apply text-xs md:text-xl }
+h5 { @apply text-[.5rem] md:text-base }
+h6 { @apply text-[.25rem] md:text-xs }
+
+h1, h2, h3, h4, h5, h6 {
+  @apply mt-10 mb-2;
+  @apply before:content-['#'] before:mr-2 before:text-accent;
+}
+
+p { @apply my-4 }
+
+/* format links */
+a, a:visited { @apply text-link rounded-sm }
+a:hover { @apply bg-link text-bg }
+
+/* format lists */
+ul { @apply my-1 ml-9 mr-12 }
+ol { @apply list-decimal my-1 mx-12 }
+
+li { @apply mb-0.5 }
+
+ul li { @apply pl-3 }
+ul li::marker { @apply content-['»'] text-accent }
+ul li:hover::marker { @apply content-['#'] font-bold text-link }
+
+ol li::marker { @apply text-accent }
+ol li:hover::marker { @apply font-bold text-link }
+
+/* Format tables */
+table { @apply border-collapse w-fit mx-auto my-6 block overflow-x-auto whitespace-nowrap }
+
+td,th { @apply border border-solid border-border text-start p-2 }
+
+th { @apply bg-bg-light font-bold }
+tr:nth-child(even) { @apply bg-bg-light }
+
+table caption { @apply text-left font-bold mb-1.5 ml-4 }
+
+/* misc body elements */
+hr { @apply border border-dashed border-accent my-2 }
+
+img { @apply max-w-[90%] h-auto mx-auto p-0.5 border-2 border-dashed border-accent rounded-2xl }
+
+blockquote { @apply ml-5 pt-2 pl-2 border-s-8 border-border border-accent italic }
+
+code, pre { @apply font-mono }
+
+pre {
+  @apply border border-border border-accent/40 rounded max-h-96 p-2.5 overflow-x-auto my-4;
+  @apply font-mono whitespace-pre-wrap break-words;
+}
+
+p code, li code, div code { @apply px-0.5 rounded text-bg bg-text }
+
+pre code { @apply p-0 rounded-none text-inherit bg-inherit }

@@ -1,0 +1,5 @@
+{% macro icon(name, class) %}
+<svg {% if class %}class="fill-none stroke-inherit inline {{ class }}" {% endif %}>
+  <use href="{{ get_url(path='feather.svg', trailing_slash=false)}}#{{ name }}" />
+</svg>
+{% endmacro icon %}

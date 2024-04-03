@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Hi !</h1>
+
+<p class="text-xl">{{ section.description }}</p>
+
+<div class="flex flex-col md:flex-row md:space-x-4 rounded-md border border-solid border-accent bg-bg-light p-3 max-2-full min-h-fit">
+  <div class="flex shrink-0 items-center justify-center self-center">
+    <img class="border-none m-0 max-w-36" alt="A black cat sticker" src="{{ get_url(path='images/logo.png', trailing_slash=false) }}" />
+  </div>
+  <div class="text-center md:text-start">
+    <p class="-m-3">{{ section.content | safe }}</p>
+    <a href="{{ get_url(path='about', trailing_slash=false) }}">My Resume</a>
+  </div>
+</div>
+
+<h2>Recent Articles</h2>
+{% set blog = get_section(path="blog/_index.md") %}
+{% set pages = blog.pages %}
+{% if pages %}
+<ul>
+  {% for page in pages %}
+  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+No article yet
+{% endif %}
+
+<h2>Highlighted Projects</h2>
+{% set projects = load_data(path="content/projects.yml") %}
+{% if projects %}
+<ul>
+  {% for project in projects %}
+  <li><a target="_blank" href="{{ project.url }}">{{ project.name }}</a> - {{ project.description }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+No project yet
+{% endif %}
+{% endblock content %}
