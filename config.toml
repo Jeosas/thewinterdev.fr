@@ -1,5 +1,5 @@
 base_url = "https://thewinterdev.fr"
-# title = ""
+title = "thewinterdev - Jean-Baptiste WINTERGERST"
 # description = ""
 compile_sass = false
 build_search_index = true

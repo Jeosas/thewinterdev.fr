@@ -1,5 +1,5 @@
 +++
-title = "Hi! - Jean-Baptiste Wintergert"
+title = "thewinterdev - Jean-Baptiste WINTERGERST"
 description = "AI & Software Engineer, at Preligens"
 +++
 
