@@ -23,6 +23,20 @@
     in 
     {
       apps.serve = {type="app"; program="${serve}/bin/serve";};
+
+      packages.default = pkgs.stdenv.mkDerivation {
+        name = "thewinterdev-fr";
+        src = ./.;
+        buildInputs = with pkgs; [ tailwindcss zola ];
+        buildPhase = ''
+          tailwindcss -i src-styles/main.scss -o static/style.css
+          zola build
+        '';
+        installPhase = ''
+          mkdir -p $out/www
+          cp -R public $out/www
+        '';
+      };
     }
   );
 }

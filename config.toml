@@ -2,12 +2,12 @@ base_url = "https://thewinterdev.fr"
 title = "thewinterdev - Jean-Baptiste WINTERGERST"
 # description = ""
 compile_sass = false
-build_search_index = true
 default_language = "en"
 generate_feed = true
 taxonomies = [
     {name = "tags", feed = true},
 ]
+ignored_content = [ "*.yml" ]
 
 [markdown]
 render_emoji = true

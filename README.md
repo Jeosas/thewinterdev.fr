@@ -16,7 +16,9 @@ $ nix run .#serve
 
 ## Building
 
-> Coming
+```console
+$ nix build .
+```
 
 ## Notes
 
