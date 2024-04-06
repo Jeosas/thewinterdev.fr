@@ -86,7 +86,7 @@
 
 <link rel="canonical" href="{{ url | safe }}">
 {% if image %}
-<link rel="shortcut icon" type="image/x-icon" href="{{ get_url(path='favicon.ico', trailing_slash=false) }}">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 {% endif %}
 {% endblock metatags %}
 {% if config.generate_feed %}
@@ -97,5 +97,5 @@
 {% endif %}
 
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{{ get_url(path='style.css', trailing_slash=false) | safe }}" />
+<link rel="stylesheet" type="text/css" href="/style.css" />
 {% endblock css %}
