@@ -1,6 +1,6 @@
 base_url = "https://thewinterdev.fr"
-title = "thewinterdev - Jean-Baptiste WINTERGERST"
-# description = ""
+title = "Jean-Baptiste WINTERGERST"
+description = "Independent contractor, freelancer and bloger in software engineering and devops."
 compile_sass = false
 default_language = "en"
 generate_feed = true
