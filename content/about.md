@@ -2,11 +2,15 @@
 title = "My Resume"
 +++
 
+<p class="m-0 text-right">
+  <a href="/cv-jeanbaptiste-wintergerst.pdf" class="self-align-right rounded-md px-2 py-0.5 border border-link inline-block">Download pdf</a>
+</p>
+
 ## Skills
 
 - Software engineering
 - Full-Stack Development
-- DevOps
+- DevSecOps
 - IT Infrastructure
 - System Administration
 - Network Administration
@@ -32,7 +36,8 @@ title = "My Resume"
 
 - French (native)
 - English (fluent)
-- German (basic)
+- German (conversational)
+- Japanese (basic)
 
 ## Work Experience
 

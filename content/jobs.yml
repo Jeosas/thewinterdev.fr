@@ -4,9 +4,9 @@
   end: Today
   description:
     - AI production framework development (python, tensorflow)
-    - Geo-spacial image processing (python, gdal/rasterio, Cython)
+    - Geospacial image processing (python, gdal/rasterio, Cython)
     - "Internal services development: API, MLOps (python, FastAPI, PostgreSQL)"
-    - Software deployment on cloud cluster (Nomad, Consul, Terraform/Ansible)
+    - Software deployment on cloud cluster (Kubernetes, Nomad, Consul, Terraform/Ansible)
     - CI/CD management (GitHub Actions, AWS S3/ECR/EC2)
     - Mono-repository and Poly-repository management (Makefile, pyinvoke)
   technologies:
