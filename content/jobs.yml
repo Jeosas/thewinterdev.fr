@@ -3,19 +3,25 @@
   start: Jul, 2020
   end: Today
   description:
+    - I've created a component framework to help the data-science teams in developing AI algorithms faster.
+    - "After that, I took part in the creation of internal services industrializing the creation, testing and deployment of algorithms: experiment tracking, Quality Analysis, creation and monitoring of active deployments at our client's premises."
+    - "In the mean time, I helped migrating our code base to a mono-repository: creation and maintenance of specialized tools, and CI/CD pipelines facilitating the developers' daily tasks and allowing them to gain in velocity."
+    - I also set up a cloud cluster allowing the automated deployment of our applications through our CD for evermore velocity.
+  technologies:
     - AI production framework development (python, tensorflow)
     - Geospacial image processing (python, gdal/rasterio, Cython)
     - "Internal services development: API, MLOps (python, FastAPI, PostgreSQL)"
     - Software deployment on cloud cluster (Kubernetes, Nomad, Consul, Terraform/Ansible)
     - CI/CD management (GitHub Actions, AWS S3/ECR/EC2)
     - Mono-repository and Poly-repository management (Makefile, pyinvoke)
-  technologies:
+  badges:
     - Python
     - Cython
     - Tensorflow
     - Gdal
     - FastAPI
     - PostgreSQL
+    - Kubernetes
     - Nomad/Consul
     - Terraform
     - Ansible
@@ -28,9 +34,11 @@
   start: Jan, 2019
   end: Apr, 2021
   description:
+    - (Volunteering) I helped the studio in developing their website from wire-frames, and in deploying it to a bare-metal linux server.
+  technologies:
     - Website development for a mp3 web-serie studio
     - Deployment on bare-metal linux server
-  technologies:
+  badges:
     - PHP
     - Laravel 5
     - Linux
@@ -40,11 +48,15 @@
   start: Nov, 2019
   end: Jun, 2019
   description:
+    - I developed a new HMI for my client's simulation software.
+    - I also redesigned the UX in order to facilitate its usage by operators.
+    - During this project, I met weekly with my client to exchange ideas and feedback on the current version, and to clarify the needs and requirements going forward.
+  technologies:
     - "Client: Safran Aircraft Engines"
     - Human-Machine Interface development (python, Qt)
     - "Client meetings: establish need and aquire regular feedback on advancements"
     - Agile Method
-  technologies:
+  badges:
     - python
     - Qt
     - Agile
@@ -55,10 +67,11 @@
   start: Feb, 2019
   end: Jul, 2019
   description:
+  technologies:
     - Collaborative industrial robot programming (Java)
     - 2D vision system programming (Keyence)
     - Redaction of training and maintenance material
-  technologies:
+  badges:
     - Java
     - Kuka iiwa
     - Keyence

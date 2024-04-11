@@ -9,13 +9,17 @@
     </div>
     <p class="mt-0 mb-0 text-lg font-bold">{{ job.title }}</p>
     <p class="mt-1 ml-2 text-sm">{{ job.employer }} <strong>::</strong> {{ job.start }} - {{ job.end }}</p>
+    {% if job.description %}
+    <p>{{ job.description | join(sep="<br />") | safe }}</p>
+    {% endif %}
+    <p>Technologies:</p>
     <ul>
-      {% for line in job.description %}
+      {% for line in job.technologies %}
       <li>{{ line }}</li>
       {% endfor %}
     </ul>
     <p class="flex flex-wrap gap-2">
-      {% for tech in job.technologies %}
+      {% for tech in job.badges %}
       <span class="rounded-full px-2 py-0.5 bg-accent text-bg inline-block">{{ tech }}</span>
       {%endfor %}
     </p>
