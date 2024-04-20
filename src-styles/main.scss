@@ -9,10 +9,10 @@
 /* --- Markdown styling --- */
 
 /* Format headers */
-h1 { @apply text-2xl md:text-4xl }
-h2 { @apply text-xl md:text-3xl }
-h3 { @apply text-base md:text-2xl }
-h4 { @apply text-xs md:text-xl }
+h1 { @apply text-2xl md:text-3xl }
+h2 { @apply text-xl md:text-2xl }
+h3 { @apply text-base md:text-xl }
+h4 { @apply text-xs md:text-lg }
 h5 { @apply text-[.5rem] md:text-base }
 h6 { @apply text-[.25rem] md:text-xs }
 
@@ -31,7 +31,7 @@ a:hover { @apply bg-link text-bg }
 ul { @apply my-1 ml-9 mr-12 }
 ol { @apply list-decimal my-1 mx-12 }
 
-li { @apply mb-0.5 }
+li { @apply mb-2 }
 
 ul li { @apply pl-3 }
 ul li::marker { @apply content-['»'] text-accent }
@@ -41,7 +41,7 @@ ol li::marker { @apply text-accent }
 ol li:hover::marker { @apply font-bold text-link }
 
 /* Format tables */
-table { @apply border-collapse w-fit mx-auto my-6 block overflow-x-auto whitespace-nowrap }
+table { @apply border-collapse mx-auto my-6 block overflow-x-auto whitespace-nowrap }
 
 td,th { @apply border border-solid border-border text-start p-2 }
 
@@ -55,13 +55,13 @@ hr { @apply border border-dashed border-accent my-2 }
 
 img { @apply max-w-[90%] h-auto mx-auto p-0.5 border-2 border-dashed border-accent rounded-2xl }
 
-blockquote { @apply ml-5 pt-2 pl-2 border-s-8 border-border border-accent italic }
+blockquote { @apply ml-5 pl-2 border-s-8 border-border border-accent italic }
 
 code, pre { @apply font-mono }
 
 pre {
   @apply border border-border border-accent/40 rounded max-h-96 p-2.5 overflow-x-auto my-4;
-  @apply font-mono whitespace-pre-wrap break-words;
+  @apply font-mono;
 }
 
 p code, li code, div code { @apply px-0.5 rounded text-bg bg-text }

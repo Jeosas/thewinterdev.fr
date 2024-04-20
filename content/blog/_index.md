@@ -6,4 +6,4 @@ page_template = "blog-page.html"
 generate_feed = true
 +++
 
-Search by *[tags](/tags)*
+Search by *[#tags](/tags)*

@@ -6,10 +6,12 @@
 {{ section.content | safe }}
 
 {% set pages = section.pages %}
-<ul class="title-list">
+<ul>
 {% for page in pages %}
   <li>
-    <a href="{{ page.permalink | safe }}">{% if page.date %}{{ page.date }} - {% endif %}{{ page.title }}</a>
+    <a href="{{ page.permalink | safe }}" class="visited:text-slate-400 visited:hover:text-bg">
+      {% if page.date %}{{ page.date }} - {% endif %}{{ page.title }}
+    </a>
   </li>
 {% endfor %}
 </ul>
