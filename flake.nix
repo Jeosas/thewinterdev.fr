@@ -27,7 +27,7 @@
         src = ./.;
         buildInputs = with pkgs; [ tailwindcss zola ];
         buildPhase = ''
-          tailwindcss -i src-styles/main.scss -o static/style.css
+          tailwindcss -i src-styles/main.scss -o static/style.css --minify
           zola build
         '';
         installPhase = ''
