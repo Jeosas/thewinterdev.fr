@@ -4,7 +4,7 @@ description = "I created a blogging/protfolio website in 2 days using a simple s
 # updated =
 
 [taxonomies]
-tags = [ "web", "nix", "zola", "tailwindcss"]
+tags = [ "web", "nixos", "zola", "tailwindcss"]
 
 [extra]
 hero_file = "how-to-create-a-simple-website.jpg"
@@ -235,4 +235,4 @@ This is it! How to setup a simple blog website using **Zola**, **TailwindCSS** a
 
 If you are curious about how all this came together, sources of this website can be found on [GitHub](https://github.com/Jeosas/thewinterdev.fr).
 
-See you in the next article where I'll show you how to deploy this website on a simple RaspberryPi using NixOS and the package we just created.
+See you in the next article where I show you [how to deploy this website on a simple RaspberryPi using NixOS](@/blog/2024-05-15-deploying-a-website-on-a-nixos-rpi.md) and the package we just created.
