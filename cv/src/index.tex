@@ -1,67 +1,188 @@
 \makecvtitle
 
 \section{Education}
+\ifenglish
 \cventry{2016--2019}{Ingénieur généraliste}{École Nationale Supérieur d'Arts et Métiers}{Cluny}{}{Specialization in mecatronics and machine learning}
+\else
+\cventry{2016--2019}{Ingénieur généraliste}{École Nationale Supérieur d'Arts et Métiers}{Cluny}{}{Spécialisé en mécatronique et machine learning}
+\fi
 
 \section{Experience}
 
-\cventry{2020--Today}{AI \& Software Engineer}{Preligens}{Paris/Lyon}{}{Created a component framework to help the data-science teams in developing AI algorithms faster.\newline{}
-Created internal services for algorithms: experiment tracking, Quality Analysis, creation and monitoring of active deployments.\newline{}
-Migrating our code base to a mono-repository: creation and maintenance of specialized tools and CI/CD.\newline{}
-Set up of a cloud cluster with automated deployment through CD.\newline{}
-Technologies:
-\begin{itemize}
-  \item AI production framework development (python, tensorflow)
-  \item Geospacial image processing (python, gdal/rasterio, Cython)
-  \item Internal services development: API, MLOps (python, FastAPI, PostgreSQL) 
-  \item Software deployment on cloud cluster (Nomad, Consul, Terraform/Ansible)
-  \item CI/CD management (Github Actions, AWS S3/ECR/EC2)
-  \item Mono-repository and Poly-repository management (Makefile, pyinvoke)
-\end{itemize}}
+\cventry{
+  \ifenglish
+  2020--Today
+  \else
+  2020--Ajd
+  \fi
+  }{
+  \ifenglish
+  AI \& Software Engineer
+  \else
+  Ingénieur logiciel et IA | DevOps
+  \fi
+}{Preligens}{Paris/Lyon}{}{
+  \ifenglish
+  Created a component framework to help the data-science teams in developing AI algorithms faster.\newline{}
+  Created internal services for algorithms: experiment tracking, Quality Analysis, creation and monitoring of active deployments.\newline{}
+  Migrating our code base to a mono-repository: creation and maintenance of specialized tools and CI/CD.\newline{}
+  Set up of a cloud cluster with automated deployment through CD.\newline{}
+  Technologies:
+  \begin{itemize}
+    \item AI production framework development (python, tensorflow)
+    \item Geospacial image processing (python, gdal/rasterio, Cython)
+    \item Internal services development: API, MLOps (python, FastAPI, PostgreSQL) 
+    \item Software deployment on cloud cluster (Nomad, Consul, Terraform/Ansible)
+    \item CI/CD management (Github Actions, AWS S3/ECR/EC2)
+    \item Mono-repository and Poly-repository management (Makefile, pyinvoke)
+    \item DevSecOps methodology (CodeQL, Snyk, Sonarqube)
+  \end{itemize}
+  \else
+  Création d'un framework composants pour aider le développement rapide d'algorithmes IA.\newline{}
+  Création de services internes de MLOps: suivit d’expérimentations, Quality Analysis, déploiements.\newline{}
+  Migration de notre base de code vers un mono-repository: création et maintenance d'outils et de CI/CD.\newline{}
+  Mis en place d'un cluster cloud pour le déploiement automatique de nos applications par notre CD.\newline{}
+  Technologies:
+  \begin{itemize}
+    \item Développement de framework applicatif IA (python, tensorflow)
+    \item Traitement d'images géo-positionné (python, gdal/rasterio, Cython)
+    \item Développement de services internes: API, MLOps (python, FastAPI, PostgreSQL) 
+    \item Mise en production de services sur cluster (Kubernetes, Nomad, Consul, Terraform/Ansible)
+    \item Gestion de CI/CD (Github Actions, AWS S3/ECR/EC2)
+    \item Gestion de mono-repository et poly-repository (Makefile, pyinvoke)
+    \item Dévelopement du DevSecOps (CodeQL, Snyk, Sonarqube)
+  \end{itemize}
+  \fi
+}
 
-\cventry{2019--2021}{FullStack Web developer}{Sutdio Post-Météore}{Paris}{}{(Volunteering) Website development from wire-frames, and deployment to bare-metal linux server.\newline{}
-Technologies:
-\begin{itemize}
-\item Web development (php, Laravel 5)
-  \item Relational database (MySQL)
-  \item Deployment on linux server (Debian)
-\end{itemize}}
 
-\cventry{2019--2020}{Consulting Engineer}{Astek}{Paris}{}{HMI development for my client's simulation software.\newline{}
-UX redesign to facilitate its usage by operators.\newline{}
-Weekly meeting with my client to exchange feedback and clarify needs.\newline{}
-Technologies:
-\begin{itemize}
-  \item HMI development (Python,Qt)
-  \item Agile methodology (SCRUM)
-\end{itemize}}
+\cventry{2019--2021}{
+  \ifenglish
+  FullStack Web developer
+  \else
+  Développeur Web FullStack
+  \fi
+  }{Studio Post-Météore}{Paris}{}{
+  \ifenglish
+  (Volunteering) Website development from wire-frames, and deployment to bare-metal linux server.\newline{}
+  Technologies:
+  \begin{itemize}
+    \item Web development (php, Laravel 5)
+    \item Relational database (MySQL)
+    \item Deployment on linux server (Debian)
+  \end{itemize}
+  \else
+  (Bénévolat) Developpement de site web à partir de wireframe, et déploiement sur server linux bare-metal.\newline{}
+  Technologies:
+  \begin{itemize}
+    \item Développement Web (php, Laravel 5)
+    \item Base de données relationnelle (MySQL)
+    \item Déployement sur serveur linux (Debian)
+  \end{itemize}
+  \fi
+}
 
-\cventry{6 mo. 2019}{Internership at Manufacturing Academy 4.0}{Group Renault}{Paris}{}{
-\begin{itemize}
-  \item iiwa collaborative robot programming (Java)
-  \item Image recognition hardware programming (Keyence)
-  \item Creation of training material on the installation and maintenance of automated systems.
-\end{itemize}}
+\cventry{2019--2020}{
+  \ifenglish
+  Consulting Engineer
+  \else
+  Ingénieur Consultant
+  \fi
+  }{Astek}{Paris}{}{
+  \ifenglish
+  HMI development for my client's simulation software.\newline{}
+  UX redesign to facilitate its usage by operators.\newline{}
+  Weekly meeting with my client to exchange feedback and clarify needs.\newline{}
+  Technologies:
+  \begin{itemize}
+    \item HMI development (Python,Qt)
+    \item Agile methodology (SCRUM)
+  \end{itemize}
+  \else
+  Développement d'IHM pour le logiciel de simulation de mon client.\newline{}
+  Refonte de l'UX pour facilité son usage par les opérateurs.\newline{}
+  Réunion hebdomadaire avec mon client pour echanger feedbacks et besoins.\newline{}
+  Technologies:
+  \begin{itemize}
+    \item Development d'IHM (Python,Qt)
+    \item Méthodologie Agile (SCRUM)
+  \end{itemize}
+  \fi
+}
 
+\cventry{6 mo. 2019}{
+  \ifenglish
+  Internership at Manufacturing Academy 4.0
+  \else
+  Stage à la Manufacturing Academy 4.0
+  \fi
+  }{Groupe Renault}{Paris}{}{
+  \ifenglish
+  \begin{itemize}
+    \item iiwa collaborative robot programming (Java)
+    \item Image recognition hardware programming (Keyence)
+    \item Creation of training material on the installation and maintenance of automated systems.
+  \end{itemize}
+  \else
+  \begin{itemize}
+    \item Programmation de robots collaboratifs iiwa (Java)
+    \item Programmation de hardware de reconnaissance d'images (Keyence)
+    \item Création de formations sur l'installation et la maintenance de systèmes automatisés.
+  \end{itemize}
+  \fi
+}
+
+\newpage
+
+\ifenglish
 \section{Languages}
 \cvlanguage{French}{native}{}
 \cvlanguage{English}{fluent}{}
 \cvlanguage{German}{conversational}{}
 \cvlanguage{Japanese}{basic}{}
+\else
+\section{Langues}
+\cvlanguage{Français}{natif}{}
+\cvlanguage{Anglais}{bilingue}{}
+\cvlanguage{Allemand}{intermédiaire}{}
+\cvlanguage{Japonais}{bases}{}
+\fi
 
-\section{Computer skills}
+\ifenglish
+\section{Computer Skills}
 \cvline{languages}{Python, Cython, Rust, C/C++, SQL, HTML5, CSS3 (SASS), JavaScript}
 \cvline{frameworks}{Python: FastAPI, Typer\newline{}
 Rust: Actix, Clap\newline{}
 Web: Htmx, Sveltekit}
 \cvline{databases}{Relational: PostgreSQL, MySQL\newline{}
 NoSQL: Redis}
+\cvline{data}{Airflow, Metabase}
 \cvline{containers}{Docker, Podman, Kubernetes, Nomad}
 \cvline{virtualisation}{QEMU}
-\cvline{CI/CD tools}{GitHub Actions}
-\cvline{monitoring}{Prometheus, Graphana}
+\cvline{CI/CD tools}{GitHub Actions, GitLab CI}
+\cvline{monitoring}{Prometheus, Graphana, OpenTelemetry}
 \cvline{infrastructure as code}{Terraform, Ansible, Nix}
+\cvline{cloud}{AWS (EC2, S3, ECR)}
+\cvline{security}{OpenPolicyAgent, Snyk, CodeQL, Sonarqube}
 \cvline{project management}{Github Project}
+\else
+\section{Compétences Informatiques}
+\cvline{languages}{Python, Cython, Rust, C/C++, SQL, HTML5, CSS3 (SASS), JavaScript}
+\cvline{frameworks}{Python: FastAPI, Typer\newline{}
+Rust: Actix, Clap\newline{}
+Web: Htmx, Sveltekit}
+\cvline{BDD}{Relational: PostgreSQL, MySQL\newline{}
+NoSQL: Redis}
+\cvline{data}{Airflow, Metabase}
+\cvline{conteneurs}{Docker, Podman, Kubernetes, Nomad}
+\cvline{virtualisation}{QEMU}
+\cvline{CI/CD tools}{GitHub Actions, GitLab CI}
+\cvline{monitoring}{Prometheus, Graphana, OpenTelemetry}
+\cvline{infrastructure as code}{Terraform, Ansible, Nix}
+\cvline{cloud}{AWS (EC2, S3, ECR)}
+\cvline{sécurité}{OpenPolicyAgent, Snyk, CodeQL, Sonarqube}
+\cvline{project management}{Github Project}
+\fi
 
 % \section{Interests}
 % \cvitem{hobby 1}{Description}

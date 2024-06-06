@@ -1,5 +1,10 @@
 \documentclass[11pt,a4paper,sans,final]{moderncv}
 
+% Translation
+\newif\ifenglish
+\englishtrue % Show English text only
+% \englishfalse % Show French text only
+
 % moderncv themes
 \moderncvstyle{casual}
 \moderncvcolor{green}
@@ -12,8 +17,12 @@
 
 % personal data
 \name{Jean-Baptiste}{Wintergerst}
-\renewcommand*{\titlefont}{\Large\mdseries\slshape}
-\title{Independent contractor \& freelancer | Software engineering | DevSecOps | Cloud}
+\renewcommand*{\titlefont}{\large\mdseries\slshape}
+\ifenglish
+\title{Independent contractor \& freelancer | Software engineering | DevSecOps | Solution Architect}
+\else
+\title{Travailleur indépendant \& freelance | Ingénieur Logiciel | DevSecOps | Architecte Solution}
+\fi
 \address{Villeurbanne}{France}
 % \phone[mobile]{+1~(234)~567~890}
 % \phone[fixed]{+2~(345)~678~901}
