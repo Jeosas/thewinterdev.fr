@@ -7,11 +7,11 @@
 
 <div class="flex flex-col md:flex-row md:space-x-4 rounded-md border border-solid border-accent bg-bg-light p-3 max-2-full min-h-fit">
   <div class="flex shrink-0 items-center justify-center self-center">
-    <img class="border-none m-0 max-w-36" alt="A black cat sticker" src="/images/logo.png" />
+    <img class="border-none rounded-none m-0 max-w-36" alt="A black cat sticker" src="/images/logo.png" />
   </div>
   <div class="text-center md:text-start">
     <p class="-m-3">{{ section.content | safe }}</p>
-    <a href="{{ get_url(path='about', trailing_slash=false) }}">My Resume</a>
+    <a href="{{ get_url(path='about', trailing_slash=false) }}" class="text-lg md:ml-3">Hire me</a>
   </div>
 </div>
 
