@@ -342,7 +342,7 @@ To do so, all we need to do is run the following command:
 
 ```bash
 $ # replace the host by the server's IP
-$ nixos-rebuild switch .#nixosConfigurations.oxygen --target-host=X.X.X.X
+$ nixos-rebuild switch --flake .#oxygen --target-host=root@X.X.X.X
 ```
 
 > You need your SSH keys to be correctly setup for the command to run, but this is beyond the scope of this article. If you need help, look for how to configure SSH using the `~/.ssh/config` file.
