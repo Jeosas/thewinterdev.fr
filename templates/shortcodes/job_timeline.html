@@ -1,7 +1,7 @@
 {% import "_icons.html" as icons %}
 
 <div class="p-4">
-  {% set jobs = load_data(path="content/jobs.yml") %}
+  {% set jobs = load_data(path="data/jobs.yml") %}
   {% for job in jobs %}
   <div class="relative border-l border-solid border-accent px-4 pb-4 ">
     <div class="stroke-accent absolute -left-2 top-0">

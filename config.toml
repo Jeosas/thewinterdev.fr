@@ -7,7 +7,6 @@ generate_feed = true
 taxonomies = [
     {name = "tags", feed = true},
 ]
-ignored_content = [ "*.yml" ]
 
 [markdown]
 render_emoji = true
