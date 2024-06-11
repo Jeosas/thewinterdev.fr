@@ -1,0 +1,139 @@
+services:
+  - title: Solution Architecture
+    desc: |2
+      Starting a new project? Wondering if changing your stack could benefit you?
+      I can help you choose the right technologies and architecture to boost you project.
+      Let me guide you every step of the way from your software to its deployment in production environments while sharing
+      best practices in quality and security.
+  - title: Software engineering
+    desc: |2
+      In need of specialized software for your company to bring it to the next level?
+      I can help you with its development, alone or with your team.
+  - title: Full-Stack Development
+    desc: |2
+      Web services are a good way to expose your brand or services to your users.
+      I can help you with the creation of your services, may they be exposed internally or externally, and doing this
+      alone or with your team.
+  - title: DevOps
+    desc: |2
+      Boost your teams' productivity by setting up DevOps practices! I can accompany you through this methodology with
+      things like setting up automated pipelines for code analysis, software testing, packaging and deployment.
+  - title: DevSecOps
+    desc: |2
+      If a software can be automatically tested for its behavior, it can as well be tested for known vulnerabilities.
+      With you, I'll setup automated testing of the security of your software before it reaches production.
+  - title: IT Infrastructure
+    desc: |2
+      Infrastructures don't have to be complicated.
+      In the cloud or on premise, I'll use my knowledge in Linux systems and network management to help you setup your
+      infrastructure in a secure and optimized way.
+
+stack:
+  Languages: Shell, Bash, Python, Cython, Rust, C/C++, SQL, HTML5, CSS3 (SASS), JavaScript
+  Frameworks:
+    Python: FastAPI, Typer
+    Rust: Actix, Clap
+    Web: Htmx, Sveltekit
+  Databases:
+    Relational: PostgreSQL, MySQL
+    NoSQL: Redis
+  Data: Airflow, Metabase
+  Containerization: Docker, Podman, Kubernetes, Nomad
+  Virtualisation: QEMU
+  CI/CD tools: GitHub Actions, GitLab CI
+  Monitoring: Prometheus, Graphana, OpenTelemetry
+  Infrastructure as Code: Terraform, Ansible, Nix
+  Cloud: AWS (EC2, S3, ECR)
+  Operating Systems: Windows, Linux (Archlinux, NixOS, Ubuntu, Debian, RHEL)
+  Security: OpenPolicyAgent, Snyk, CodeQL, Sonarqube
+  Project Management: Github Project
+
+languages:
+  - name: French
+    level: native
+  - name: English
+    level: fluent
+  - name: German
+    level: conversational
+  - name: Japanese
+    level: basic
+
+jobs:
+  - title: AI & Software Engineer
+    employer: Preligens
+    start: Jul, 2020
+    end: Today
+    description:
+      - I've created a component framework to help the data-science teams in developing AI algorithms faster.
+      - "After that, I took part in the creation of internal services industrializing the creation, testing and deployment of algorithms: experiment tracking, Quality Analysis, creation and monitoring of active deployments at our client's premises."
+      - "In the mean time, I helped migrating our code base to a mono-repository: creation and maintenance of specialized tools, and CI/CD pipelines facilitating the developers' daily tasks and allowing them to gain in velocity."
+      - I also set up a cloud cluster allowing the automated deployment of our applications through our CD for evermore velocity.
+    technologies:
+      - AI production framework development (python, tensorflow)
+      - Geospacial image processing (python, gdal/rasterio, Cython)
+      - "Internal services development: API, MLOps (python, FastAPI, PostgreSQL)"
+      - Software deployment on cloud cluster (Kubernetes, Nomad, Consul, Terraform/Ansible)
+      - Linux administration (Ubuntu, RedHat Enterprise Linux 8/9)
+      - CI/CD management (GitHub Actions, AWS S3/ECR/EC2)
+      - Mono-repository and Poly-repository management (Makefile, pyinvoke)
+    badges:
+      - Python
+      - Cython
+      - Tensorflow
+      - Gdal
+      - FastAPI
+      - PostgreSQL
+      - Kubernetes
+      - Nomad/Consul
+      - Terraform
+      - Ansible
+      - GitHub
+      - AWS S3/ECR/EC2
+      - Linux
+
+  - title: Full Stack Developper
+    employer: Studio Post-Météore (volonteering)
+    start: Jan, 2019
+    end: Apr, 2021
+    description:
+      - (Volunteering) I helped the studio in developing their website from wire-frames, and in deploying it to a bare-metal linux server.
+    technologies:
+      - Website development for a mp3 web-serie studio
+      - Deployment on bare-metal linux server (Debian)
+    badges:
+      - PHP
+      - Laravel 5
+      - Linux
+
+  - title: Application developer
+    employer: Astek
+    start: Nov, 2019
+    end: Jun, 2019
+    description:
+      - I developed a new HMI for my client's simulation software.
+      - I also redesigned the UX in order to facilitate its usage by operators.
+      - During this project, I met weekly with my client to exchange ideas and feedback on the current version, and to clarify the needs and requirements going forward.
+    technologies:
+      - "Client: Safran Aircraft Engines"
+      - Human-Machine Interface development (python, Qt)
+      - "Client meetings: establish need and aquire regular feedback on advancements"
+      - Agile Method
+    badges:
+      - python
+      - Qt
+      - Agile
+      - Product management
+
+  - title: Internship at Manufacturing Academy 4.0
+    employer: Groupe Renault
+    start: Feb, 2019
+    end: Jul, 2019
+    description:
+    technologies:
+      - Collaborative industrial robot programming (Java)
+      - 2D vision system programming (Keyence)
+      - Redaction of training and maintenance material
+    badges:
+      - Java
+      - Kuka iiwa
+      - Keyence
