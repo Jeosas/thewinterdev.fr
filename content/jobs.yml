@@ -12,6 +12,7 @@
     - Geospacial image processing (python, gdal/rasterio, Cython)
     - "Internal services development: API, MLOps (python, FastAPI, PostgreSQL)"
     - Software deployment on cloud cluster (Kubernetes, Nomad, Consul, Terraform/Ansible)
+    - Linux administration (Ubuntu, RedHat Enterprise Linux 8/9)
     - CI/CD management (GitHub Actions, AWS S3/ECR/EC2)
     - Mono-repository and Poly-repository management (Makefile, pyinvoke)
   badges:
@@ -37,7 +38,7 @@
     - (Volunteering) I helped the studio in developing their website from wire-frames, and in deploying it to a bare-metal linux server.
   technologies:
     - Website development for a mp3 web-serie studio
-    - Deployment on bare-metal linux server
+    - Deployment on bare-metal linux server (Debian)
   badges:
     - PHP
     - Laravel 5

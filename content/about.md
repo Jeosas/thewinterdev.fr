@@ -30,7 +30,7 @@ title = "My Resume"
 
 ## Tech Stack
 
-- **Languages**: Python, Cython, Rust, C/C++, SQL, HTML5, CSS3 (SASS), JavaScript
+- **Languages**: Shell, Bash, Python, Cython, Rust, C/C++, SQL, HTML5, CSS3 (SASS), JavaScript
 - **Frameworks**
     - **Python**: FastAPI, Typer
     - **Rust**: Actix, Clap
@@ -45,6 +45,7 @@ title = "My Resume"
 - **Monitoring**: Prometheus, Graphana, OpenTelemetry
 - **Infrastructure as Code**: Terraform, Ansible, Nix
 - **Cloud**: AWS (EC2, S3, ECR)
+- **Operating Systems**: Windows, Linux (Archlinux, NixOS, Ubuntu, Debian, RHEL)
 - **Security**: OpenPolicyAgent, Snyk, CodeQL, Sonarqube
 - **Project Management**: Github Project
 
