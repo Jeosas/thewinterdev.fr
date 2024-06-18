@@ -1,3 +1,28 @@
+infos:
+  first_name: Jean-Baptiste
+  last_name: Wintergerst
+  email: contact@thewinterdev.fr
+  website: thewinterdev.fr
+  github: Jeosas
+  linkedin: jean-baptiste.wintergerst-a40436152
+
+
+title: "Independent contractor & freelancer | Software engineering | DevSecOps | Solution Architect"
+
+sections:
+  education: Education
+  jobs: Experience
+  languages: Languages
+  stack: Computer Skills
+
+education:
+  - start: 2016
+    end: 2019
+    title: Ingénieur généraliste
+    school: École Nationale Supérieur d'Arts et Métiers 
+    city: Cluny
+    desc: Specialization in Mecatronics and Artificial Intelligence
+
 services:
   - title: Solution Architecture
     desc: |2
@@ -30,52 +55,48 @@ services:
 
 stack:
   Languages: Shell, Bash, Python, Cython, Rust, C/C++, SQL, HTML5, CSS3 (SASS), JavaScript
-  Frameworks:
-    Python: FastAPI, Typer
-    Rust: Actix, Clap
-    Web: Htmx, Sveltekit
-  Databases:
-    Relational: PostgreSQL, MySQL
-    NoSQL: Redis
+  Databases: PostgreSQL, MySQL, Redis, Elasticsearch
   Data: Airflow, Metabase
   Containerization: Docker, Podman, Kubernetes, Nomad
   Virtualisation: QEMU
   CI/CD tools: GitHub Actions, GitLab CI
   Monitoring: Prometheus, Graphana, OpenTelemetry
   Infrastructure as Code: Terraform, Ansible, Nix
-  Cloud: AWS (EC2, S3, ECR)
+  Cloud: AWS
   Operating Systems: Windows, Linux (Archlinux, NixOS, Ubuntu, Debian, RHEL)
   Security: OpenPolicyAgent, Snyk, CodeQL, Sonarqube
-  Project Management: Github Project
+  Project Management: Github Project, Agile, XP
+  Mobile: Kotlin, leptos(Rust)
+  Networking: TCP/IP, LAN, DHCP, DNS, VPN, Firewall
 
 languages:
   - name: French
+    rating: 4
     level: native
   - name: English
+    rating: 4
     level: fluent
   - name: German
+    rating: 2
     level: conversational
   - name: Japanese
+    rating: 1
     level: basic
 
 jobs:
   - title: AI & Software Engineer
     employer: Preligens
+    city: Paris/Lyon
     start: Jul, 2020
-    end: Today
+    end: Present
     description:
-      - I've created a component framework to help the data-science teams in developing AI algorithms faster.
-      - "After that, I took part in the creation of internal services industrializing the creation, testing and deployment of algorithms: experiment tracking, Quality Analysis, creation and monitoring of active deployments at our client's premises."
-      - "In the mean time, I helped migrating our code base to a mono-repository: creation and maintenance of specialized tools, and CI/CD pipelines facilitating the developers' daily tasks and allowing them to gain in velocity."
-      - I also set up a cloud cluster allowing the automated deployment of our applications through our CD for evermore velocity.
-    technologies:
-      - AI production framework development (python, tensorflow)
-      - Geospacial image processing (python, gdal/rasterio, Cython)
-      - "Internal services development: API, MLOps (python, FastAPI, PostgreSQL)"
-      - Software deployment on cloud cluster (Kubernetes, Nomad, Consul, Terraform/Ansible)
-      - Linux administration (Ubuntu, RedHat Enterprise Linux 8/9)
-      - CI/CD management (GitHub Actions, AWS S3/ECR/EC2)
-      - Mono-repository and Poly-repository management (Makefile, pyinvoke)
+      - Created a python framework of reusable components to help the data-science teams in developing AI algorithms faster using tensorflow and geospacial image processing libraries such as GDAL and rasterio.
+      - Optimised Python image processing using Cython for shorter training and inference time in production.
+      - "Created internal MLOps services around algorithms for experiment tracking, Quality Analysis and monitoring of active deployments using python's FastAPI and PostgreSQL databases to improuve the company production pipelines."
+      - Migrated our code base to a mono-repository for a quicker development cycle and better developer experience.
+      - "Created and maintained specialized tools using Makefile and pyInvoke and continuously improved our GitHub Action CI/CD for our mono-repository to allow more velocity from our team."
+      - Set up a Kubernetes and later a Nomad cloud cluster on AWS using Terraform and Ansible with automated deployment through GitHub Action CD.
+      - Administered Linux machines, from personnal machine (Archlinux/Ubuntu) to company servers (Ubuntu/RHEL 8/9)
     badges:
       - Python
       - Cython
@@ -88,51 +109,43 @@ jobs:
       - Terraform
       - Ansible
       - GitHub
-      - AWS S3/ECR/EC2
+      - AWS
       - Linux
-
-  - title: Full Stack Developper
-    employer: Studio Post-Météore (volonteering)
+  - title: FullStack Web Developer
+    employer: Studio Post-Météore (volunteering)
+    city: Paris
     start: Jan, 2019
     end: Apr, 2021
     description:
-      - (Volunteering) I helped the studio in developing their website from wire-frames, and in deploying it to a bare-metal linux server.
-    technologies:
-      - Website development for a mp3 web-serie studio
-      - Deployment on bare-metal linux server (Debian)
+      - Accompanied the studio in the creation of their website for their communication and serving of their content (audio series).
+      - Developed the website using PHP and the Laravel framework and a MySQL database.
+      - Deployed the website on bare-metal linux server (Debian).
     badges:
       - PHP
       - Laravel 5
+      - MySQL
       - Linux
-
   - title: Application developer
     employer: Astek
+    city: Paris
     start: Nov, 2019
-    end: Jun, 2019
+    end: Jun, 2020
     description:
-      - I developed a new HMI for my client's simulation software.
-      - I also redesigned the UX in order to facilitate its usage by operators.
-      - During this project, I met weekly with my client to exchange ideas and feedback on the current version, and to clarify the needs and requirements going forward.
-    technologies:
-      - "Client: Safran Aircraft Engines"
-      - Human-Machine Interface development (python, Qt)
-      - "Client meetings: establish need and aquire regular feedback on advancements"
-      - Agile Method
+      - Developed a new HMI for my client's simulation software using Python and Qt.
+      - Redesigned the old UX in order to facilitate its usage by operators.
+      - Managed the project using Agile methodology and was the main point of contact for my client, exchanging ideas and feedback on the ongoing developments and clarifing the needs and requirements.
     badges:
-      - python
-      - Qt
       - Agile
       - Product management
-
   - title: Internship at Manufacturing Academy 4.0
     employer: Groupe Renault
+    city: Paris
     start: Feb, 2019
-    end: Jul, 2019
+    end: Jul, 2020
     description:
-    technologies:
-      - Collaborative industrial robot programming (Java)
-      - 2D vision system programming (Keyence)
-      - Redaction of training and maintenance material
+      - Created training material on installing, operating and maintaining automated systems (Kuka robotic arms and autonomous conveyor robots)
+      - Programmed Kuka iiwa collaborative industrial robots using Java
+      - Programmed Keyence 2D vision systems
     badges:
       - Java
       - Kuka iiwa

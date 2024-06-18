@@ -1,0 +1,97 @@
+title: "Travailleur indépendant & freelance | Ingénierie Logiciel | DevSecOps | Architecture de Solution"
+
+sections:
+  education: Éducation
+  jobs: Éxperience
+  languages: Langues
+  stack: Compétences informatiques
+
+education:
+  - start: 2016
+    end: 2019
+    title: Ingénieur généraliste
+    school: École Nationale Supérieur d'Arts et Métiers 
+    city: Cluny
+    desc: Spécialisation en Méchatronique et Intelligence Artificiel
+
+languages:
+  - name: Français
+    rating: 4
+    level: natif
+  - name: Anglais
+    rating: 4
+    level: bilingue
+  - name: Allemand
+    rating: 2
+    level: intermédiaire
+  - name: Japonais
+    rating: 1
+    level: bases
+
+jobs:
+  - title: Ingénieur logiciel et IA
+    employer: Preligens
+    city: Paris/Lyon
+    start: Juil, 2020
+    end: Aujourd'hui
+    description:
+      - Création d'un framework de composants pour aider les équipes de data-science à déveloper des algorithmes d'IA plus rapidement, en utilisant tensorflow et des libraries de traitement d'images géopositionnées comme GDAL ou rasterio.
+      - Optimisation du traitement d'image Python en utilisant Cython pour des temps d'entrainement et d'inférence en production plus court.
+      - "Crétation d'une plateforme de MLOps interne autour de nos algorithmes pour le suivi d'expérimentation, le contrôle qualité et la surveillance dés deployments actifs, utilisant FastAPI (Python) et PostgreSQL, pour améliorer la chaine de valeurs de l'entreprise."
+      - Migration de notre dépôt de code vers un mono-repo pour des cycles de développement plus rapides et une meilleure expérience développeur.
+      - "Création et entretien d'outils spéciaux utilisant Makefile et pyInvoke et amélioration continue de notre CI/CD Github Actions pour notre mono-repo afin d'assurer la plus grande velocité de notre équipe."
+      - Mise en place d'un cluster Kubernetes, puis Nomad sur AWS utilisant Terraform et Ansible avec déploiement automatisé de nos applications via la CD Github Actions.
+      - Administration de machines Linux, de mon poste de travail personnel (Archlinux/Ubuntu) aux serveurs de l'entreprise (Ubuntu, RHEL 8/9).
+    badges:
+      - Python
+      - Cython
+      - Tensorflow
+      - Gdal
+      - FastAPI
+      - PostgreSQL
+      - Kubernetes
+      - Nomad/Consul
+      - Terraform
+      - Ansible
+      - GitHub
+      - AWS
+      - Linux
+  - title: Développeur Web FullStack
+    employer: Studio Post-Météore (bénévolat)
+    city: Paris
+    start: Janv, 2019
+    end: Avr, 2021
+    description:
+      - Accompagnement du studio dans la création de son site web utilisé pour leur communication et la mise a disposition de leur contenu (séries audio).
+      - Développement de leur site web utilisant PHP et le framework Laravel 5, et une base de données MySQL.
+      - Deploiement du site sur serveur linux 'bare-metal' (Debian).
+    badges:
+      - PHP
+      - Laravel 5
+      - MySQL
+      - Linux
+  - title: Développeur d'application
+    employer: Astek
+    city: Paris
+    start: Nov, 2019
+    end: Juin, 2020
+    description:
+      - Développement d'une nouvelle IHM pour le logiciel de simulation de mon client utilisant Python et Qt.
+      - Remaniement de l'ancienne interface pour simplifier son utilisation par les opérateurs.
+      - Gestion du projet avec la méthode Agile et role de point de contact principal avec mon client, échange d'idées et retours sur les travaux en cours et planification des besoins et contraintes.
+    badges:
+      - Agile
+      - Product management
+  - title: Stage à la Manufacturing Academy 4.0
+    employer: Groupe Renault
+    city: Paris
+    start: Fevr, 2019
+    end: Juil, 2019
+    description:
+      - Création de formations sur l'installation, l'utilisation et la maintenance de systèmes automatisés (robot collaboratif Kuka iiwa et transporteur autonomes).
+      - Programmation de robots Kuka iiwa avec Java.
+      - Programmation de systèmes de vision Keyence.
+    badges:
+      - Java
+      - Kuka iiwa
+      - Keyence

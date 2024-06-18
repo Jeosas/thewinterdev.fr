@@ -11,34 +11,30 @@
     let
       pkgs = nixpkgs.legacyPackages.${system};
 
-      serve = pkgs.writeShellApplication {
-        name = "serve";
-        runtimeInputs = with pkgs; [ tailwindcss zola ];
-
-        text = ''
-          tailwindcss -i src-styles/main.scss -o static/style.css --watch=always &
-          zola serve
-        '';
-      };
+      serve = import ./nix/serve.nix { inherit pkgs; };
+      cv = import ./nix/cv.nix { inherit pkgs; };
     in 
     {
       packages.default = pkgs.stdenv.mkDerivation {
         name = "thewinterdev-fr";
         src = ./.;
-        buildInputs = with pkgs; [ tailwindcss zola ];
+        buildInputs = with pkgs; [ cv tailwindcss zola ];
         buildPhase = ''
           tailwindcss -i src-styles/main.scss -o static/style.css --minify
           zola build
+          cv
         '';
         installPhase = ''
           mkdir -p $out/www
           cp -R public $out/www
+          cp build/en/cv.pdf $out/www/public/cv-jeanbaptiste-wintergerst-en.pdf
+          cp build/fr/cv.pdf $out/www/public/cv-jeanbaptiste-wintergerst-fr.pdf
         '';
       };
 
       devShells.default = pkgs.mkShell {
         name = "thewindevdev";
-        packages = [ serve pkgs.tectonic ];
+        packages = [ serve cv ];
       };
     }
   );

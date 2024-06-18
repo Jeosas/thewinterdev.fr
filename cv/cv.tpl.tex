@@ -1,0 +1,86 @@
+{% macro rating(value) -%}
+  {%- for i in range(end=value) %} \faIcon[solid]{circle}{% endfor %}
+  {%- for i in range(end=4-value) %} \faIcon[regular]{circle}{% endfor -%}
+{% endmacro rating -%}
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage{datetime}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\definecolor{awesome}{HTML}{568323}
+
+\newdateformat{monthyeardate}{
+  \monthname[\THEMONTH], \THEYEAR}
+
+
+%-------------------------------------------------------------------------------
+\photo[circle,noedge,left]{pp}
+\name{ {{- infos.first_name -}} }{ {{- infos.last_name -}} }
+\position{ {{- title | replace(from='&', to='\&') -}} }
+
+\email{ {{- infos.email -}} }
+\homepage{ {{- infos.website -}} }
+\github{ {{- infos.github -}} }
+\linkedin{ {{- infos.linkedin -}} }
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[R]
+
+\makecvfooter
+  {\monthyeardate\today}
+  { {{- infos.first_name }} {{ infos.last_name }}~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+\cvsection{ {{- sections.education -}} }
+\begin{cventries}
+  {% for edu in education %}
+  \cventry
+    { {{- edu.title -}} }
+    { {{- edu.school -}} }
+    { {{- edu.city -}} }
+    { {{- edu.start }} - {{ edu.end -}} }
+    { {{- edu.desc }} }
+    {% endfor %}
+\end{cventries}
+
+\cvsection{ {{- sections.jobs -}} }
+\begin{cventries}
+  {% for job in jobs %}
+  \cventry
+    { {{- job.title | replace(from='&', to='\&') -}} }
+    { {{- job.employer -}} }
+    { {{- job.city -}} }
+    { {{- job.start }} - {{ job.end -}} }
+    {
+      \begin{cvitems}
+        {% for bullet in job.description -%}
+        \item {{ bullet }}
+        {% endfor -%}
+      \end{cvitems}
+    }
+    {% endfor %}
+\end{cventries}
+
+\cvsection{ {{- sections.languages -}} }
+\begin{cvskills}
+  {% for lang in languages -%}
+  \cvskill{ {{- lang.name -}} }{ {{- self::rating(value=lang.rating) }}~~{{ lang.level -}} }
+  {% endfor %}
+\end{cvskills}
+
+\newpage
+
+\cvsection{ {{- sections.stack -}} }
+\begin{cvskills}
+  {% for key, value in stack -%}
+  \cvskill { {{- key -}} }{ {{- value -}} }
+  {% endfor %}
+\end{cvskills}
+
+\end{document}

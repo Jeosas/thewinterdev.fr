@@ -25,18 +25,7 @@
 <h2>Tech Stack</h2>
 <ul>
   {% for key, value in cv.stack %}
-  {% if value is object %}
-  <li>
-    <strong>{{ key }}</strong>
-    <ul>
-      {% for key2, value2 in value %}
-      <li><strong>{{ key2 }}:</strong> {{ value2 }}</li>
-      {% endfor %}
-    </ul>
-  </li>
-  {% else %}
   <li><strong>{{ key }}:</strong> {{ value }}</li>
-  {% endif %}
   {% endfor %}
 </ul>
 <h2>Spoken Languages</h2>
@@ -53,14 +42,10 @@
     <div class="stroke-accent absolute -left-2 top-0">
       {{ icons::icon(name="disc", class="w-4 h-4 bg-bg stroke-2") }}
     </div>
-    <p class="mt-0 mb-0 text-lg font-bold">{{ job.title }}</p>
-    <p class="mt-1 ml-2 text-sm">{{ job.employer }} <strong>::</strong> {{ job.start }} - {{ job.end }}</p>
-    {% if job.description %}
-    <p>{{ job.description | join(sep="<br />") | safe }}</p>
-    {% endif %}
-    <p>Technologies:</p>
+    <p class="mt-0 mb-0 text-lg font-bold">{{ job.employer }}</p>
+    <p class="mt-1 ml-2 text-sm">{{ job.title }} <strong>::</strong> {{ job.start }} - {{ job.end }}</p>
     <ul>
-      {% for line in job.technologies %}
+      {% for line in job.description %}
       <li>{{ line }}</li>
       {% endfor %}
     </ul>
