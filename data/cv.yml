@@ -6,8 +6,7 @@ infos:
   github: Jeosas
   linkedin: jean-baptiste.wintergerst-a40436152
 
-
-title: "Independent contractor & freelancer | Software engineering | DevSecOps | Solution Architect"
+title: "Independent contractor & freelancer | Software engineering | CI/CD | DevOps"
 
 sections:
   education: Education
@@ -19,7 +18,7 @@ education:
   - start: 2016
     end: 2019
     title: Ingénieur généraliste
-    school: École Nationale Supérieur d'Arts et Métiers 
+    school: École Nationale Supérieur d'Arts et Métiers
     city: Cluny
     desc: Specialization in Mecatronics and Artificial Intelligence
 
@@ -88,7 +87,7 @@ jobs:
     employer: Preligens
     city: Paris/Lyon
     start: Jul, 2020
-    end: Present
+    end: Aug, 2024
     description:
       - Created a python framework of reusable components to help the data-science teams in developing AI algorithms faster using tensorflow and geospacial image processing libraries such as GDAL and rasterio.
       - Optimised Python image processing using Cython for shorter training and inference time in production.
