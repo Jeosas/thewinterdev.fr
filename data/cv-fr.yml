@@ -1,4 +1,4 @@
-title: "Travailleur indépendant & freelance | Ingénierie Logiciel | CI/CD | DevOps"
+title: "Travailleur indépendant & freelance | Software engineering | CI/CD | DevOps"
 
 sections:
   education: Éducation
@@ -12,7 +12,7 @@ education:
     title: Ingénieur généraliste
     school: École Nationale Supérieur d'Arts et Métiers
     city: Cluny
-    desc: Spécialisation en Méchatronique et Intelligence Artificiel
+    desc: Spécialisation en Mécatronique et Intelligence Artificiel
 
 languages:
   - name: Français
@@ -35,11 +35,11 @@ jobs:
     start: Juil, 2020
     end: Aout, 2024
     description:
-      - Création d'un framework de composants pour aider les équipes de data-science à déveloper des algorithmes d'IA plus rapidement, en utilisant tensorflow et des libraries de traitement d'images géopositionnées comme GDAL ou rasterio.
+      - Création d'un framework de composants pour aider les équipes de data-science à développer des algorithmes d'IA plus rapidement, en utilisant tensorflow et des librairies de traitement d'images géo-positionnées comme GDAL ou rasterio.
       - Optimisation du traitement d'image Python en utilisant Cython pour des temps d'entrainement et d'inférence en production plus court.
       - "Création d'une plateforme de MLOps interne autour de nos algorithmes pour le suivi d'expérimentation, le contrôle qualité et la surveillance des déploiements actifs, utilisant FastAPI (Python) et PostgreSQL, pour améliorer la chaine de valeurs de l'entreprise."
       - Migration de notre dépôt de code vers un mono-repo pour des cycles de développement plus rapides et une meilleure expérience développeur.
-      - "Création et entretien d'outils spéciaux utilisant Makefile et pyInvoke et amélioration continue de notre CI/CD Github Actions pour notre mono-repo afin d'assurer la plus grande velocité de notre équipe."
+      - "Création et entretien d'outils spéciaux utilisant Makefile et pyInvoke et amélioration continue de notre CI/CD Github Actions pour notre mono-repo afin d'assurer la plus grande vélocité de notre équipe."
       - Mise en place d'un cluster Kubernetes, puis Nomad sur AWS utilisant Terraform et Ansible avec déploiement automatisé de nos applications via la CD Github Actions.
       - Administration de machines Linux, de mon poste de travail personnel (Archlinux/Ubuntu) aux serveurs de l'entreprise (Ubuntu, RHEL 8/9).
     badges:
@@ -49,12 +49,14 @@ jobs:
       - Gdal
       - FastAPI
       - PostgreSQL
+      - Docker
       - Kubernetes
       - Nomad/Consul
       - Terraform
       - Ansible
       - GitHub
-      - AWS
+      - GitHub Actions
+      - AWS (S3/EC2/ECR)
       - Linux
   - title: Développeur Web FullStack
     employer: Studio Post-Météore (bénévolat)
@@ -82,6 +84,8 @@ jobs:
     badges:
       - Agile
       - Product management
+      - Python
+      - Qt
   - title: Stage à la Manufacturing Academy 4.0
     employer: Groupe Renault
     city: Paris
