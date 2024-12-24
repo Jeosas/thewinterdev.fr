@@ -122,9 +122,10 @@ Then, we setup the ssh configuration for our server.
 ```
 
 We setup several things here:
- - First we setup the `authorizedKeys` for the root user. This must contain the **public key** that we generated earlier,
- - Then we setup the SSH service and we make sure it is started upon boot,
- - Finally, we need to open the SSH port in our firewall so our server lets us communicate through it.
+
+- First we setup the `authorizedKeys` for the root user. This must contain the **public key** that we generated earlier,
+- Then we setup the SSH service and we make sure it is started upon boot,
+- Finally, we need to open the SSH port in our firewall so our server lets us communicate through it.
 
 > Note that using the root user to connect through ssh isn't a good practice, and you should setup an other user for this purpose.
 > I used the root user here for the sake of simplicity.
@@ -146,11 +147,11 @@ First we register our new NixOSConfiguration to our `flake.nix`:
 {
   outputs = { self, nixpkgs, ... }: {
     nixosConfigurations = {
-      oxygen = nixpkgs.lib.nixosSystem { 
-        system = "aarch64-linux"; 
-        modules = [ 
+      oxygen = nixpkgs.lib.nixosSystem {
+        system = "aarch64-linux";
+        modules = [
           "${nixpkgs}/nixos/modules/installer/sd-card/sd-image-aarch64.nix"
-          ./rpi/configuration.nix 
+          ./rpi/configuration.nix
         ];
       };
     };
@@ -159,9 +160,10 @@ First we register our new NixOSConfiguration to our `flake.nix`:
 ```
 
 Here are the important thing to take note of:
- - We setup the `system` attribute so nix is aware that this configuration is to be compile for `aarch64-linux` systems,
- - We give as a module the `rpi/configuration.nix` we wrote in the section above,
- - And we also add the `${nixpkgs}/nixos/modules/installer/sd-card/sd-image-aarch64.nix` module, that tells nix how to build an SD image for our Pi.
+
+- We setup the `system` attribute so nix is aware that this configuration is to be compile for `aarch64-linux` systems,
+- We give as a module the `rpi/configuration.nix` we wrote in the section above,
+- And we also add the `${nixpkgs}/nixos/modules/installer/sd-card/sd-image-aarch64.nix` module, that tells nix how to build an SD image for our Pi.
 
 Now we can build the SD image with:
 
@@ -272,7 +274,7 @@ We then need to make `inputs` available to our NixOS configuration:
 {
   outputs = { self, ... }@inputs: {
     nixosConfigurations = {
-      oxygen = nixpkgs.lib.nixosSystem { 
+      oxygen = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
       };
     };
@@ -304,7 +306,7 @@ First we setup ACME for certificates creation and auto-renewal:
 { ... }: {
   # Let's encrypt
   ## /var/lib/acme/.challenges must be writable by the ACME user
-  ## and readable by the Nginx user. 
+  ## and readable by the Nginx user.
   users.users.nginx.extraGroups = [ "acme" ];
   security.acme = {
     acceptTerms = true;
@@ -332,10 +334,10 @@ The `forceSSL` sets up a redirection for HTTP request to HTTPS to ensure all our
 
 ### Sending our new configuration to the Pi
 
-All that is left is to apply our new configuration to our server. Even though creating new SD images is very useful in case our SD card malfunctions at some point, 
+All that is left is to apply our new configuration to our server. Even though creating new SD images is very useful in case our SD card malfunctions at some point,
 it is rather unpractical to flash our SD card every time we need to update the configuration, not mentioning the downtime.
 
-Fortunately, we can update the configuration through SSH. What we are going to do is build the server configuration on our computer, 
+Fortunately, we can update the configuration through SSH. What we are going to do is build the server configuration on our computer,
 copy the resulting packages to the server and then activate the new configuration on the server (with a downtime of only seconds).
 
 To do so, all we need to do is run the following command:
@@ -348,8 +350,9 @@ $ nixos-rebuild switch --flake .#oxygen --target-host=root@X.X.X.X
 > You need your SSH keys to be correctly setup for the command to run, but this is beyond the scope of this article. If you need help, look for how to configure SSH using the `~/.ssh/config` file.
 
 > If you are using an non-Nixos distro, you will not have `nixoxs-rebuild` in your PATH. Either:
->  - use it through `nix-shell -p nixos-rebuild`,
->  - read the [next section](#bonus-setting-up-deploy-rs).
+>
+> - use it through `nix-shell -p nixos-rebuild`,
+> - read the [next section](#bonus-setting-up-deploy-rs).
 
 At this point our website is up and running using HTTPS encrypted traffic.
 
@@ -377,7 +380,7 @@ I started using `deploy-rs` from Serokell for its simplicity for local deploymen
 }
 ```
 
-We create a *devShell* with `deploy-rs` installed, and make it default for convenience. We can then enter the *devShell*:
+We create a _devShell_ with `deploy-rs` installed, and make it default for convenience. We can then enter the _devShell_:
 
 ```bash
 $ nix develop
@@ -409,7 +412,7 @@ $ nix develop
 }
 ```
 
-We add a `deploy` key containing our `oxygen` server. We type in its hostname (IP or name in your ssh config) and setup the `system` profile with the `sshUser` along with the `path` to the related NixOS configuration. 
+We add a `deploy` key containing our `oxygen` server. We type in its hostname (IP or name in your ssh config) and setup the `system` profile with the `sshUser` along with the `path` to the related NixOS configuration.
 
 ### Deploy
 

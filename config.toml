@@ -3,10 +3,8 @@ title = "Jean-Baptiste WINTERGERST"
 description = "Independent contractor, freelancer and bloger in software engineering and devops."
 compile_sass = false
 default_language = "en"
-generate_feed = true
-taxonomies = [
-    {name = "tags", feed = true},
-]
+generate_feeds = true
+taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
 render_emoji = true
